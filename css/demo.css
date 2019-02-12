@@ -1,0 +1,228 @@
+/**
+ * Animations
+ */
+
+/* 2.6초 딜레이 (왜 아틀라스인가에 적용된 효과)*/
+.fromTopIn
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	opacity: 1.0;
+	transition-delay: 2.6s;
+}
+
+.fromTopOut
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,-10px);
+	opacity: 0.0;
+}
+
+.fromBottomIn
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	opacity: 1.0;
+}
+
+.fromBottomOut
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,10px);
+	opacity: 0.0;
+}
+
+.fromLeftIn
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	opacity: 1.0;
+}
+
+.fromLeftOut
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(-10px,0);
+	opacity: 0.0;
+}
+
+.fromRightIn
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	opacity: 1.0;
+}
+
+.fromRightOut
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(10px, 0);
+	opacity: 0.0;
+}
+
+/* 1.15초 딜레이 (이용후기에 적용된 효과) */
+.scaleUpIn
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	
+	transform: scale(1.0,1.0);
+	opacity: 1.0;
+	transition-delay: 1.15s;
+}
+
+.scaleUpOut
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	
+	transform: scale(1.3,1.3);
+	opacity: 0.0;
+}
+
+/* 2.4초 딜레이(프로그램에 적용된 효과) */
+.scaleDownIn
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	
+	transform: scale(1.0,1.0);
+	opacity: 1.0;
+	transition-delay: 2.4s;
+}
+
+.scaleDownOut
+{
+	transition: transform 1.0s ease, opacity 1.0s ease;
+	
+	transform: scale(0.7,0.7);
+	opacity: 0.0;
+}
+/* 자작 */
+
+.slideDownIn1{
+	transition: all 2.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	height: 700px;
+	opacity: 1.0;
+}
+
+.slideDownOut1{
+	transition: all 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	height: 0px;
+	opacity: 0.0;
+}
+.slideDownIn2{
+	transition: all 2.5s ease, opacity 3.0s ease;
+	
+	transform: translate(0,0);
+	height: 700px;
+	opacity: 1.0;
+}
+
+.slideDownOut2{
+	transition: all 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	height: 0px;
+	opacity: 0.0;
+}
+.slideDownIn3{
+	transition: all 3.0s ease, opacity 3.0s ease;
+	
+	transform: translate(0,0);
+	height: 700px;
+	opacity: 1.0;
+}
+
+.slideDownOut3{
+	transition: all 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	height: 0px;
+	opacity: 0.0;
+	/* 왜 아틀라스인가에 적용된 효과 */
+}
+.slideDownIn4{
+	transition: all 3.8s ease, opacity 3.0s ease;
+	
+	transform: translate(0,0);
+	height: 700px;
+	opacity: 1.0;
+}
+
+.slideDownOut4{
+	transition: all 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	height: 0px;
+	opacity: 0.0;
+}
+/* 이용후기에 적용된 효과 */
+.slideDownIn5{
+	
+	transition: all 4.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	height: 700px;
+	background: #ccc;
+	opacity: 1.0;
+}
+
+.slideDownOut5
+{
+	transition: all 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	height: 400px;
+	background: #ccc;
+	opacity: 0.0;
+}
+/* 시설안내에 적용된 효과 */
+.slideDownIn6{
+	
+	transition: all 2.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	height: 900px;
+	background: #000;
+	opacity: 1.0;
+}
+
+.slideDownOut6
+{
+	transition: all 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	height: 100px;
+	background: #000;
+	opacity: 0.0;
+}
+/* 시설안내 슬라이드에 적용된 효과 */
+.slideDownIn7{
+	
+	transition: all 1.1s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	width: 100%;
+	background: #000;
+	opacity: 1.0;
+}
+
+.slideDownOut7
+{
+	transition: all 1.0s ease, opacity 1.0s ease;
+	
+	transform: translate(0,0);
+	width: 0;
+	background: #000;
+	opacity: 0.0;
+}

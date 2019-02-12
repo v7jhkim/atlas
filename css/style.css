@@ -1,0 +1,547 @@
+/* style.css */
+@font-face { font-family: 'BareunBatang'; font-style: normal; font-weight: 400; 
+    src: url("gharam12.dothome.co.kr/BareunBatangOTFB") format('otf'),
+         url("gharam12.dothome.co.kr/BareunBatangOTFL") format('otf'), 
+         url("gharam12.dothome.co.kr/BareunBatangOTFM") format('otf'); }
+
+/* 기본 세팅 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "맑은 고딕", san-serif;
+    color: #444;
+    font-size: 100%;
+}
+a{
+    text-decoration: none;
+    color: #ccc;
+}
+ul{list-style: none;}
+
+/* 글자색상 */
+.font_white{color: #fff;}
+.font_gray{color: #444;}
+.font_black{color: #000;}
+
+/* 기본 레이아웃틀 요소들 */
+header, section, footer, .container{
+    position: relative;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+#main_header{
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+#main_header h1{
+    position: absolute;
+    left: 30px;
+    top: -5px;
+}
+#main_header h1 img{
+    width: 200px;
+    height: 30px;
+}
+/* 메인 메뉴 */
+#gnb{
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+/* 단계 메뉴 */
+#gnb > .depth1 > li:first-child{
+    margin-left: 350px;
+}
+
+#gnb > .depth1 > li{
+    position: relative;
+    float: left;
+    width: 170px; /* 전체를 100%로보고 7개로 나눠야하기때문 */
+    /*border : 1px solid red;*/
+    height: 30px;
+    text-align: center;
+}
+#gnb > .depth1 > li > a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.2em;
+    color: #222;
+    font-weight: bold;
+}
+/* 2단계메뉴*/
+#gnb .depth2{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+#gnb .depth2 > li > a{
+    display: block;
+    padding: 4px 0;
+    color: #222;
+}
+#gnb li a{
+    display: block;
+    padding: 0 40px;
+    font-size: 1.2em;
+}
+#gnb li a:hover{
+    color: #E23626;
+}
+
+/* 메인 비주얼 영역 */
+#content .main_visual{
+    width: auto; /* 꽉찬 쪽 */
+    height: 950px;
+    /* background : url(../images/main-visual1.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    text-align: center;
+}
+#content .main_visual h2{
+    z-index: 99;
+    margin-top: 350px;
+    color: #fff;
+    /* font-size: 3em; */
+    font-size: 50px;
+    text-shadow:3px 3px 3px rgba(0, 0, 0, 0.8);
+    font-family: 'BareunBatang',sans-serif;
+    padding-right: 400px;
+    opacity: 0;
+}
+#content .main_visual h3{
+    z-index: 99;
+    color: #fff;
+    /* font-size: 1.4em; */
+    font-size: 50px;
+    text-shadow:3px 3px 3px rgba(0, 0, 0, 0.8);
+    margin: 20px;
+    font-family: 'BareunBatang',sans-serif;
+    padding-left: 400px;
+    opacity: 0;
+}
+
+#content .main_visual .main_btn{
+    width: 200px;
+    height: 50px;
+    background:  #FAC90E;
+    border-radius: 10px;
+    z-index: 99;
+    float: left;
+    padding: 10px;
+    padding-top: 15px;
+    /* position: relative; */
+    /* left: 50%; */
+    /* top:10%; */
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translateX(-150%);
+    opacity: 0;
+}
+#content .main_visual .main_btn:last-child{
+    width: 200px;
+    height: 50px;
+    background:   #FAC90E;
+    border-radius: 10px;
+    z-index: 99;
+    float: left;
+    padding: 10px;
+    padding-top: 15px;
+    transform: translateX(1%);
+}
+#content .main_visual .main_btn{
+    color: #000;
+    font-weight: bold;
+}
+#content .main_visual .main_btn:hover{
+    background:  #E23626;
+    color: #fff;
+}
+#content .main_visual .main_btn:last-child{
+    margin-left: 100px;
+}
+
+
+/* 프로그램 */
+#content > h1{
+    text-align: center;
+    font-size: 3em;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+#content .program{
+    display: flex;    
+    margin-top: 75px;
+    height: 700px;
+}
+#content .program .col4{
+    flex: 1;
+    /* padding: 20px; */
+    /* padding-top: 2.4em; */
+}
+
+
+#content .program .col4 h2{
+    color: #fff;
+    font-size: 2.4em;
+    font-family: serif;
+    margin-bottom: 16px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    display: block;
+    height: 70px;
+    padding-top: 300px;
+}
+#content .program .col4 p{
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    display: block;
+    height: 50px;
+    margin-top: 100px;
+}
+#content .program .col4 .more_btn{
+    display: block;
+    width: 120px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+#content .program .program_hover1{
+    background-image: url("../images/p1.png");
+    background-size: cover;
+    text-align: center;
+    transition: all, 0.3s;
+}
+#content .program .program_hover2{
+    background-image: url("../images/p2.png");
+    background-size: cover;
+    text-align: center;
+    transition: scale, 0.3s;
+}
+#content .program .program_hover3{
+    background-image: url("../images/p3.png");
+    background-size: cover;
+    text-align: center;
+    transition: all, 0.3s;
+}
+#content .program .program_hover4{
+    background-image: url("../images/p4.png");
+    background-size: cover;
+    text-align: center;
+    transition: all, 0.3s;
+}
+/* 프로그램 호버 효과  */
+#content .program .col4 .more_btn:hover{
+    background: #E23626;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+#content .program .col4 .program_hover1,
+.program_hover2,
+.program_hover3,
+.program_hover4{
+    width: 100%;
+    height: 100%;
+}
+#content .program .col4 .program_hover1:hover,
+.program_hover2:hover,
+.program_hover3:hover,
+.program_hover4:hover{
+    transform: scale(1.1,1.1);
+}
+#content .program .col4:nth-child(1){
+    background: #000;
+    overflow: hidden;
+}
+#content .program .col4:nth-child(2){
+    background: #000;
+    overflow: hidden;
+}
+#content .program .col4:nth-child(3){
+    background: #000;
+    overflow: hidden;
+}
+#content .program .col4:nth-child(4){
+    background: #000;
+    overflow: hidden;
+}
+
+/*  프로그램 변형효과 */
+/* #content .program .col4:nth-child(1){
+    transition: all, 2s
+}
+#content .program .col4:nth-child(1):hover {
+    width: 600px;
+} */
+
+
+/* 시설 안내 */
+#content .facility{
+    margin-top: 200px;
+    background: url("../images/sub2_visual.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 900px; */
+}
+
+#content .facility h1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 3em;
+    color: #fff;
+}
+
+/* why choose us */
+#content .why{
+    background-image: url("..//images/whychoose_ko1.png");
+    background-size: cover;
+    margin-top: 200px;
+    border: 1px solid #000;
+    text-align: center;
+}
+#content .why h1{
+    font-size: 3.5em;
+    margin-top: 100px;
+    color: #fff;
+}
+#content .why > p{
+    width: 1200px;
+    color: #ccc;
+    font-size: 1.5em;
+    margin: 0 auto;
+    margin-top: 70px;
+    line-height: 2em;
+}
+#content .why .why_count{
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+#content .why .why_count .counterUp{
+    flex: 1;
+    margin-top: 100px;
+    color: #ccc;
+}
+#content .why .why_count .counterUp span{
+    font-size: 3.5em;
+    color: #fff;
+}
+#content .why .why_count .counterUp p{
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+/* 이용후기 */
+#content .people{
+    width: 100%;
+    /* display: flex; */
+    /* height: 600px; */
+    padding-top: 50px;
+}
+#content .people_container{
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+#content .people .col3{
+    flex: 1;
+    background-image: url(../images/layer.png);
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 120px 50px; 
+}
+#content .people .col3 p{
+    text-align: center;
+}
+#content .people .col3 p:nth-child(1){
+    margin-bottom: 10px;
+}
+#content .people .col3 p:nth-child(2){
+    float: left;
+}
+#content .people .col3 p:nth-child(3){
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+#content .people .col3 p:nth-child(4){
+    float: right;
+    color: #666;
+}
+
+/* 메인 푸터 */
+#main_footer{
+    background-image: url(../images/footer.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    margin-top: 60px;
+}
+#main_footer .footer_container{
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+#main_footer .col3{
+    flex: 1;
+    color: #fff;
+    text-align: center;
+}
+#main_footer .col3:nth-child(2) address{
+    line-height: 50px;
+}
+#main_footer .col3:nth-child(3) article{
+    line-height: 30px;
+}
+#main_footer .col3 .footer_icon{
+    display: flex;
+    margin-left: 100px;
+}
+#main_footer .col3 .footer_icon a img{
+    width: 48px;
+    height: 48px;
+}
+#main_footer .col3 h2{
+    padding-bottom: 30px;
+}
+#main_footer .copyright{
+    background: #222;
+    width: 100%;
+    height: 60px;
+    margin-top: 100px;
+}
+#main_footer .copy_container{
+    width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 20px;
+}
+#main_footer .copy_container p:nth-child(1){
+}
+
+
+
+
+
+/* 페이지 시작 헤더 애니메이션 */
+/* #main_header{
+    top: -100px;
+    animation-name: header;
+    animation-duration: 0.8s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes header{
+    from{
+        top:-100px;
+        opacity: 0;
+    }
+    99%{
+        top:4px;
+    }
+    to{
+        top:0;
+        opacity: 1;
+    }
+} */
+
+/* 스와이퍼 플러그인 */
+
+html, body {
+    position: relative;
+}
+.swiper-container {
+    /* width:756px;
+    height: 503.3px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-wrapper img{
+    width:756px;
+    height: 503.3px;
+}
+.swiper-slide {
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content:center;
+    /* -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; */
+}
+.swiper-pagination {
+	position: absolute;
+    bottom: 10px;
+    right: 100px;
+	width: auto !important;
+	left: auto !important;
+	margin: 0;
+}
+.swiper-pagination-bullet {
+    display: block !important;
+    width: 200px !important;
+    height: 40px !important;
+    text-align: center !important;
+    line-height: 35px;
+    font-size: 18px;
+    color:#fff;
+    opacity: 1;
+    background: rgba(0,0,0,1) !important;
+    border-radius: 0px !important;
+    margin-right: 50px !important;
+  }
+.swiper-pagination-bullet-active {
+	color:#000;
+    background: #FAC90E !important;
+    font-weight: bold;
+}
+
+.swiper-button-next{
+    margin-right: 50px;;
+}
+.swiper-button-prev{
+    margin-left: 200px;
+}
